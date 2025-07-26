@@ -1,130 +1,89 @@
-@import './colorschemes/catppuccin-macchiato.css';
+/* === Ghoul Noir Theme for Waybar === */
 
-/* ========== Global Styles ========== */
 * {
-    border: none;
-    font-family: "JetBrainsMono Nerd Font Propo", "Noto Sans JP", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    min-height: 0;
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
+  font-size: 13px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
 }
 
+/* === Bar Container === */
 window#waybar {
-    /* background:  rgba(36, 39, 58, 0.7); */
-    background: @crust;
-    color: black;
+  background-color: #000000;
+  border-bottom: 2px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
 }
 
-tooltip {
-    background: @base;
-    border: 2px solid @crust;
-    border-radius: 0;
-}
-
-/* ========== Module Defaults ========== */
-#bluetooth,
-#custom-power,
-#network,
-#pulseaudio,
-#clock,
-#window,
-#mpris,
-#cpu,
-#memory,
-#wireplumber,
+/* === Workspaces === */
 #workspaces {
-    background: transparent;
-    font-weight: 600;
-    margin-right: 5px;
-    margin-left: 5px;
-
-    padding-top:4px;
-    padding-bottom: 4px;
-
-}
-
-/* ========== Individual Module Styles ========== */
-
-
-/* --- left modules --- */
-
-#workspaces {
-    border-color: transparent;
-    margin-left: 10px;
+  margin: 0 5px;
 }
 
 #workspaces button {
-    color: @overlay1;
-    padding: 5px;
-    /* padding-right: 10px; */
-    background: transparent;
-    transition: all 200ms;
-}
-
-#workspaces button.active,
-#workspaces button.urgent,
-#workspaces button:hover {
-    color: @color0;
+  padding: 0 10px;
+  color: #ffffff;
+  background: transparent;
+  border-bottom: 2px solid transparent;
 }
 
 #workspaces button.focused {
-    color: @crust;
+  border-bottom: 2px solid #ff0000;
+  background: rgba(255, 0, 0, 0.1);
 }
 
-#workspaces button:hover {
-    border: none;
-    box-shadow: none;
-    outline: none;
-    transition: none;
-    text-shadow: none;
+#workspaces button.urgent {
+  background: #ff0000;
+  color: #000000;
 }
 
-#clock {
-    color: @color1;
-    font-weight: 600;
-}
-
-#cpu,
-#memory {
-    color: @color2;
-}
-
-#cpu {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding-right: 0;
-    margin-right: 0;
-}
-
-#memory {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-/* --- middle modules --- */
-
+/* === Active Window Title === */
 #window {
-    background: transparent;
-    color: @overlay1;
+  color: #cccccc;
+  font-style: italic;
+  padding: 0 10px;
+  margin: 0 4px;
+  background-color: #111111;
+  border-radius: 6px;
 }
 
-
-/* --- right modules --- */
-
-#network {
-    color: @color3;
+/* === Clock === */
+#clock {
+  color: #ff0000;
+  font-weight: bold;
+  background-color: #111111;
+  border-radius: 6px;
+  padding: 0 10px;
+  margin: 0 4px;
 }
 
-#bluetooth {
-    color: @color4;
+/* === Tray Icons === */
+#tray {
+  padding: 0 10px;
+  margin: 0 4px;
+  background-color: #111111;
+  border-radius: 6px;
 }
 
-#pulseaudio,
-#wireplumber {
-    color: @color5;
+/* === Power Menu Button === */
+#custom-powermenu {
+  color: #ffffff;
+  background-color: #1a0000;
+  border-radius: 6px;
+  padding: 0 10px;
+  margin: 0 4px;
+  font-weight: bold;
 }
 
-#custom-power {
-    color: @color8;
-    margin-right: 10px;
+#custom-powermenu:hover {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+/* === Tooltips === */
+tooltip {
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 6px;
 }

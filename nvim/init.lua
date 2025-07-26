@@ -21,5 +21,10 @@ require('lazy').setup {
   require 'plugins.treesitter',
   require 'plugins.lsp',
   require 'plugins.none',
-  require 'plugins.neotree'
+  require 'plugins.neotree',
+  require 'plugins.lualine',
+  require 'plugins.others',
+  require 'plugins.oil',
+
+  require 'themes.catppuccin',
 }

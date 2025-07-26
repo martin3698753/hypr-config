@@ -1,0 +1,39 @@
+# Basic behavior
+ignore-empty-password
+show-failed-attempts
+daemonize
+
+# Image
+image=~/Pictures/ghoul-eye.png
+scaling=fit
+
+# Color scheme - Ghoul Noir
+color=0c0c0c
+ring-color=f0f0f0
+inside-color=0c0c0c00
+line-color=0c0c0c00
+
+# Indicator appearance
+indicator-radius=120
+indicator-thickness=12
+indicator-idle-visible
+
+# Highlight colors
+key-hl-color=ff2e2e
+bs-hl-color=990000
+separator-color=ff2e2e
+
+# Text colors
+text-color=f0f0f0
+text-clear-color=f0f0f0
+text-ver-color=f0f0f0
+text-wrong-color=ff2e2e
+
+inside-ver-color=2f2f2f
+inside-clear-color=bdbdbd
+inside-wrong-colo=990000
+
+# State colors
+ring-ver-color=f0f0f0
+ring-wrong-color=990000
+ring-clear-color=f0f0f0

@@ -1,0 +1,57 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans CJK JP", sans-serif;
+  font-size: 14px;
+  background: transparent;
+  color: #f0f0f0;
+  border: none;
+}
+
+window {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  border: 2px solid #ff0000;
+  padding: 20px;
+  margin-right: 100px;
+}
+
+#input {
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  padding: 6px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+#inner-box {
+  margin: 5px;
+}
+
+#outer-box {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-image: url("file:///home/martin/.config/wofi/tg2.png");
+  background-repeat: no-repeat;
+  background-size: 300px 310px;
+  background-position: 10px center;
+  padding-left: 310px; /* enough space for the image */
+}
+
+#entry {
+  padding: 6px;
+  margin: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+}
+
+#entry:selected {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+#scroll {
+  margin-top: 10px;
+}
