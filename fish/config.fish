@@ -15,3 +15,6 @@ function sudo
     set -lx SUDO_PROMPT (set_color -o E84154)"[Kagune Mode] Password: "
     command sudo $argv
 end
+
+# Load Tokyo Ghoul prompt configuration
+source ~/.config/fish/functions/prompt_functions/loader.fish
