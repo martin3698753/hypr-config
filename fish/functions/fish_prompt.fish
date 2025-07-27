@@ -24,12 +24,12 @@ set icon_home '~'
 
 set prompt_text '→'
 
-set colour_text_path 006272
-set colour_text_dirty 510C38
+set colour_text_path ff2e2e
+set colour_text_dirty 0c0c0c
 set colour_text_clean 2A0095
 
-set colour_path 41C1D7
-set colour_dirty BE4D95
+set colour_path 2f2f2f
+set colour_dirty ff2e2e
 set colour_clean 7E6FFF
 
 set segment_separator \uE0B0
@@ -265,10 +265,17 @@ end
 # Apply theme
 # ===========================
 
-function fish_prompt
+function fish_right_prompt
     set -g RETVAL $status
     prompt_status
     prompt_virtual_env
+    prompt_time
+    prompt_finish
+end
+
+function fish_prompt
+    set -g RETVAL $status
+    prompt_status
     prompt_user
     prompt_dir
     type -q hg; and prompt_hg
@@ -280,8 +287,3 @@ function fish_prompt
     prompt_finish
 end
 
-function fish_right_prompt
-    prompt_virtual_env
-    prompt_time
-    prompt_finish
-end

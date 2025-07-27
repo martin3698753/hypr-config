@@ -2,6 +2,14 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+
+# Set this options in your config.fish (if you want to :])
+set -g theme_display_user yes
+set -g theme_hide_hostname yes
+# set -g theme_hide_hostname no
+set -g default_user martin
+set -g VIRTUAL_ENV_DISABLE_PROMPT 1
+
 # Welcome message with Tokyo Ghoul ASCII art
 function fish_greeting
     echo (set_color E84154)"───── ⋆⋅☆⋅⋆ ─────"
