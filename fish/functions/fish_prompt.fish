@@ -274,8 +274,6 @@ function fish_right_prompt
 end
 
 function fish_prompt
-    set -g RETVAL $status
-    prompt_status
     prompt_user
     prompt_dir
     type -q hg; and prompt_hg
