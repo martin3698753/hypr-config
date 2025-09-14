@@ -12,7 +12,7 @@ button {
   font-family: "CaskaydiaCove Nerd Font";
   color: #dadfef;
   font-size: 15px;
-  background-color: #e26546;
+  background-color: #990000;
   border-style: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,6 @@ button:hover {
 
 #lock {
   background-image: url("./icons/lock.png");
-  border-radius: 30px 0px 0px 30px;
 }
 
 #logout {
@@ -47,6 +46,7 @@ button:hover {
 
 #shutdown {
   background-image: url("./icons/shutdown.png");
+  border-radius: 30px 0px 0px 30px;
 }
 
 #reboot {
@@ -56,7 +56,6 @@ button:hover {
 
 #hibernate {
   background-image: url("./icons/hibernate.png");
-  border-radius: 0px 30px 30px 0px;
 }
 
 #lock:hover,

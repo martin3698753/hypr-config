@@ -4,7 +4,7 @@ show-failed-attempts
 daemonize
 
 # Image
-image=~/Pictures/ghoul-eye.png
+image=~/.config/tk2.jpg
 scaling=fit
 
 # Color scheme - Ghoul Noir
@@ -17,6 +17,8 @@ line-color=0c0c0c00
 indicator-radius=120
 indicator-thickness=12
 indicator-idle-visible
+indicator-x-position=450
+indicator-y-position=500
 
 # Highlight colors
 key-hl-color=ff2e2e

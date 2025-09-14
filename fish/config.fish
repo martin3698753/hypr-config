@@ -12,14 +12,15 @@ set -g VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # Welcome message with Tokyo Ghoul ASCII art
 function fish_greeting
-    echo -ne "\e[s"
-    kitty +kitten icat --place 30x30@30x0 ~/.config/centipede.png
-    echo -ne "\e[u"
+    ## Picture
+    #echo -ne "\e[s"
+    #kitty +kitten icat --place 30x30@30x0 ~/.config/centipede.png
+    #echo -ne "\e[u"
 
     # Your Tokyo Ghoul text
     echo (set_color E84154)"───── ⋆⋅☆⋅⋆ ─────"
     echo "   東京喰種"
-    echo (set_color normal)"   「1000-7...」"
+    #echo (set_color normal)"   「1000-7...」"
     echo "   この世界は、間違っている"
     echo (set_color E84154)"───── ⋆⋅☆⋅⋆ ─────"
 end
